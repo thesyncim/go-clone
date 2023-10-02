@@ -13,7 +13,7 @@ import (
 	"reflect"
 	"unsafe"
 
-	"github.com/huandu/go-clone"
+	"github.com/thesyncim/go-clone"
 )
 
 type Func = clone.Func

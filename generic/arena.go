@@ -11,8 +11,6 @@ import (
 	"reflect"
 	"runtime"
 	"unsafe"
-
-	"github.com/huandu/go-clone"
 )
 
 // The arenaAllocator allocates memory from arena.

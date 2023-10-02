@@ -1,10 +1,10 @@
-module github.com/huandu/go-clone/generic
+module github.com/thesyncim/go-clone/generic
 
-go 1.18
+go 1.20
 
 require (
 	github.com/huandu/go-assert v1.1.5
-	github.com/huandu/go-clone v1.6.0
+	github.com/thesyncim/go-clone v1.6.0
 )
 
 require github.com/davecgh/go-spew v1.1.1 // indirect

@@ -12,8 +12,6 @@ import (
 	"runtime"
 	"testing"
 	"unsafe"
-
-	"github.com/huandu/go-assert"
 )
 
 func TestArenaClone(t *testing.T) {

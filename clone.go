@@ -172,6 +172,17 @@ func (state *cloneState) cloneMap(v reflect.Value) reflect.Value {
 	for iter := mapIter(v); iter.Next(); {
 		key := state.clone(iter.Key())
 		value := state.clone(iter.Value())
+
+		// Convert the key type if necessary
+		if key.Type() != t.Key() {
+			key = key.Convert(t.Key())
+		}
+
+		// Convert the value type if necessary
+		if value.Type() != t.Elem() {
+			value = value.Convert(t.Elem())
+		}
+
 		nv.SetMapIndex(key, value)
 	}
 
